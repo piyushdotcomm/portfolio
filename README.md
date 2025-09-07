@@ -1,10 +1,10 @@
-# [chanhdai.com](https://chanhdai.com)
+# [piyush.in](https://piyush.in)
 
-A minimal portfolio, component registry, and blog to showcase my work as a Design Engineer.
+A modern portfolio, component showcase, and blog to present my work as a Developer & Designer.
 
-Check out the live site: [chanhdai.com](https://chanhdai.com)
+Check out the live site: [piyush.in](https://piyush.in)
 
-<a href="https://frogdr.com/chanhdai.com?via=ncdai&utm_source=chanhdai.com">
+<a href="https://frogdr.com/piyush.in?via=pk&utm_source=piyush.in">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://frogdr.com/chanhdai.com/badge-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://frogdr.com/chanhdai.com/badge-white.svg">
@@ -13,9 +13,9 @@ Check out the live site: [chanhdai.com](https://chanhdai.com)
 </a>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-light.webp">
-  <img src="https://assets.chanhdai.com/images/screenshot-desktop-light.webp" alt="Screenshot">
+  <source media="(prefers-color-scheme: dark)" srcset="https://your-screenshot-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="https://your-screenshot-light.webp">
+  <img src="https://your-screenshot-light.webp" alt="Screenshot of portfolio">
 </picture>
 
 ## Overview
@@ -25,65 +25,40 @@ Check out the live site: [chanhdai.com](https://chanhdai.com)
 - Next.js 15
 - Tailwind CSS v4
 - shadcn/ui
+- Motion
 
-### Featured
+### Features
 
-- Clean & modern design
-- Light & Dark theme support
-- vCard integration
-- SEO optimization: [JSON-LD schema](https://json-ld.org), sitemap, robots
-- AI-friendly [/llms.txt](https://llmstxt.org)
-- Spam-protected email
-- Installable PWA
+- Clean & minimal design
+- Light/Dark mode support
+- Responsive & fast
+- SEO optimization (JSON-LD, sitemap, robots.txt)
+- PWA (Installable Portfolio)
+- Spam-protected contact system
 
 ### Blog
 
-- MDX & Markdown support
-- Access markdown by adding `.mdx` to URLs, e.g. `/blog/welcome.mdx`
-- Syntax Highlighting for better readability
-- RSS Feed for easy content distribution
-- Dynamic OG Images for rich previews
+- Supports Markdown & MDX
+- Easy access with `.mdx` in URLs
+- Syntax Highlighting for code
+- RSS Feed for subscribers
+- Auto-generated OG Images
 
-### Component Registry
+### Components & Showcase
 
-Easily build and distribute your own components, hooks, and pages using a custom registry powered by the [shadcn CLI](https://ui.shadcn.com/docs/cli).
+A growing collection of components, hooks, and pages with:
 
-Each component is well-documented through the Blog, featuring:
-
-- **Live Preview**: Interactive component demos
-- **Code Snippets**: Readable and copyable examples
-- **Beautiful Code Blocks**: Styled for clarity and dark mode
-- **Command Blocks**: One-click copy for quick install commands (`pnpm`, `npm`, `yarn`, `bun`)
+- **Live Demos**
+- **Copyable Code Snippets**
+- **Styled Code Blocks**
+- **Command Blocks** for installs (`npm`, `yarn`, `pnpm`, `bun`)
 
 ## Development
 
-Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
+Clone the repo and start the dev server:
 
-## License
-
-Licensed under the [MIT license](./LICENSE).
-
-You're free to use my code! Just make sure to <ins>remove all my personal information</ins> before publishing your website. It's awesome to see my code being useful to someone!
-
-## Star History
-
-[![Star History](https://starchart.cc/ncdai/chanhdai.com.svg?variant=adaptive)](https://starchart.cc/ncdai/chanhdai.com)
-
-## Acknowledgments
-
-- [React](https://react.dev)
-- [Next.js](https://nextjs.org)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Radix UI](https://www.radix-ui.com)
-- [Motion](https://motion.dev)
-- [shadcn/ui](https://ui.shadcn.com)
-- [Aceternity UI](https://ui.aceternity.com)
-- [Lucide](https://lucide.dev)
-- [Fumadocs](https://fumadocs.dev)
-- And many other open-source libraries used in `package.json`
-
-## GitAds Sponsored
-
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=ncdai/chanhdai.com@github)](https://gitads.dev/v1/ad-track?source=ncdai/chanhdai.com@github)
-
-<!-- GitAds-Verify: QICCAB4PFWV9MHUGPGPN5B2I8SAXLAOK -->
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+pnpm install
+pnpm dev
