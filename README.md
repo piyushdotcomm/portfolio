@@ -4,19 +4,6 @@ A modern portfolio, component showcase, and blog to present my work as a Develop
 
 Check out the live site: [piyush.in](https://piyush.in)
 
-<!-- <a href="https://frogdr.com/piyush.in?via=pk&utm_source=piyush.in">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://frogdr.com/chanhdai.com/badge-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://frogdr.com/chanhdai.com/badge-white.svg">
-    <img src="https://frogdr.com/chanhdai.com/badge-white.svg" alt="Monitor your Domain Rating" style="width: auto; height: 40px">
-  </picture>
-</a> -->
-
-<!-- <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://your-screenshot-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="https://your-screenshot-light.webp">
-  <!-- <img src="https://your-screenshot-light.webp" alt="Screenshot of portfolio"> -->
-<!-- </picture> --> -->
 
 ## Overview
 
