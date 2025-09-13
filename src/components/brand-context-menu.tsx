@@ -5,21 +5,21 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { toast } from "sonner";
 
-import { copyText } from "@/utils/copy";
+import { copyImageToClipboard } from "@/lib/utils";
 
-// ✅ Import your custom mark + wordmark
-import { PiyushMark, getPiyushMarkSVG } from "./piyush-mark";
-import { PiyushWordmark, getWordmarkSVG } from "./piyush-wordmark";
-// <-- replace with your wordmark file
+import { getPiyushMarkSVG,PiyushMark } from "./piyush-mark";
 
-import {
-  ContextMenu,
-  ContextMenuContent,
-  ContextMenuItem,
-  ContextMenuTrigger,
-} from "./ui/context-menu";
+export function BrandContextMenu() {
+  const handleCopy = (copyFn: () => Promise<void>, successMessage: string) => {
+    copyFn()
+      .then(() => {
+        toast.success(successMessage);
+      })
+      .catch(() => {
+        toast.error("Failed to copy. Please try again.");
+      });
+  };
 
-export function BrandContextMenu({ children }: { children: React.ReactNode }) {
   const { resolvedTheme } = useTheme();
 
   return (
