@@ -1,38 +1,15 @@
 "use client";
 
-// import { Command as CommandPrimitive } from "cmdk";
-import { HomeIcon, RssIcon } from "lucide-react";
-// import { useTheme } from "next-themes";
-// import type { ReactNode } from "react";
-// import { forwardRef, useCallback, useEffect, useState } from "react";
-// import { toast } from "sonner";
-
-// import {
-//   CommandDialog,
-//   CommandEmpty,
-//   CommandGroup,
-//   CommandInput,
-//   CommandItem,
-//   CommandList,
-//   CommandSeparator,
-// } from "@/components/ui/command";
-// import type { Post } from "@/features/blog/types/post";
-// import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
-// import { cn } from "@/lib/utils";
-// import { copyText } from "@/utils/copy";
+import { RssIcon } from "lucide-react";
 
 import { Icons } from "./icons";
-import { getPiyushMarkSVG, PiyushMark } from "./piyush-mark";
-// import { getWordmarkSVG } from "./piyush-wordmark";
-// import { Button } from "./ui/button";
-// import { Separator } from "./ui/separator";
+import { PiyushMark } from "./piyush-mark";
 
-type LucideProps = React.ComponentProps<typeof HomeIcon>;
+type LucideProps = React.ComponentProps<typeof RssIcon>;
 
 type CommandLinkItem = {
   title: string;
   href: string;
-
   icon?: React.ComponentType<LucideProps>;
   iconImage?: string;
   keywords?: string[];
@@ -56,3 +33,20 @@ const MENU_LINKS: CommandLinkItem[] = [
     icon: Icons.react,
   },
 ];
+
+export default function CommandMenu() {
+  return (
+    <div className="space-y-2">
+      {MENU_LINKS.map((item) => (
+        <a
+          key={item.title}
+          href={item.href}
+          className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100"
+        >
+          {item.icon && <item.icon className="h-4 w-4" />}
+          <span>{item.title}</span>
+        </a>
+      ))}
+    </div>
+  );
+}

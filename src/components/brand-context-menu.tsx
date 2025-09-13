@@ -1,25 +1,30 @@
 "use client";
 
-import { DownloadIcon, TriangleDashedIcon, TypeIcon } from "lucide-react";
+import {
+  DownloadIcon,
+  TriangleDashedIcon,
+  TypeIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { toast } from "sonner";
 
-import { copyImageToClipboard } from "@/lib/utils";
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"; // ✅ make sure this path matches your shadcn/ui setup
+import { copyText } from "@/utils/copy"; // ✅ adjust path if needed
 
-import { getPiyushMarkSVG,PiyushMark } from "./piyush-mark";
+import { getPiyushMarkSVG, PiyushMark } from "./piyush-mark";
+import { getWordmarkSVG } from "./piyush-wordmark"; // ✅ adjust path if needed
 
-export function BrandContextMenu() {
-  const handleCopy = (copyFn: () => Promise<void>, successMessage: string) => {
-    copyFn()
-      .then(() => {
-        toast.success(successMessage);
-      })
-      .catch(() => {
-        toast.error("Failed to copy. Please try again.");
-      });
-  };
+type BrandContextMenuProps = {
+  children: React.ReactNode;
+};
 
+export function BrandContextMenu({ children }: BrandContextMenuProps) {
   const { resolvedTheme } = useTheme();
 
   return (
@@ -30,7 +35,9 @@ export function BrandContextMenu() {
         {/* Copy Logo Mark */}
         <ContextMenuItem
           onClick={() => {
-            const svg = getPiyushMarkSVG(resolvedTheme === "light" ? "#000" : "#fff");
+            const svg = getPiyushMarkSVG(
+              resolvedTheme === "light" ? "#000" : "#fff"
+            );
             copyText(svg);
             toast.success("Copied Mark as SVG");
           }}
@@ -42,19 +49,21 @@ export function BrandContextMenu() {
         {/* Copy Wordmark */}
         <ContextMenuItem
           onClick={() => {
-            const svg = getWordmarkSVG(resolvedTheme === "light" ? "#000" : "#fff");
+            const svg = getWordmarkSVG(
+              resolvedTheme === "light" ? "#000" : "#fff"
+            );
             copyText(svg);
             toast.success("Copied Logotype as SVG");
           }}
         >
-          <TypeIcon />
+          <TypeIcon className="h-5 w-5" />
           Copy Logotype as SVG
         </ContextMenuItem>
 
         {/* Brand Guidelines */}
         <ContextMenuItem asChild>
           <Link href="/brand">
-            <TriangleDashedIcon />
+            <TriangleDashedIcon className="h-5 w-5" />
             Brand Guidelines
           </Link>
         </ContextMenuItem>
@@ -62,7 +71,7 @@ export function BrandContextMenu() {
         {/* Download Assets */}
         <ContextMenuItem asChild>
           <a href="/assets/piyush-brand.zip" download>
-            <DownloadIcon />
+            <DownloadIcon className="h-5 w-5" />
             Download Brand Assets
           </a>
         </ContextMenuItem>
