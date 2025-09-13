@@ -1,6 +1,6 @@
 import * as React from "react";
 
-// ✅ Main PiyushMark Logo Mark Component
+// Main PiyushMark Logo Mark Component
 export function PiyushMark(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -13,9 +13,8 @@ export function PiyushMark(props: React.SVGProps<SVGSVGElement>) {
       <path
         fill="currentColor"
         d="
-          M64 0h128v64H64V0Z        /* top of P */
+          M64 0h128v64H64V0Z
           M64 96h96c32 0 64-32 64-64s-32-64-64-64H64v192H0V0h64v96Z
-
           M256 0h64v96l64-96h64l-80 112 84 144h-72l-60-100v100h-64V0Z
         "
       />
@@ -30,7 +29,6 @@ export function getPiyushMarkSVG(color: string = "#000") {
       <path fill="${color}" d="
         M64 0h128v64H64V0Z
         M64 96h96c32 0 64-32 64-64s-32-64-64-64H64v192H0V0h64v96Z
-
         M256 0h64v96l64-96h64l-80 112 84 144h-72l-60-100v100h-64V0Z
       "/>
     </svg>
