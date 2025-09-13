@@ -35,7 +35,7 @@ import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 import { cn } from "@/lib/utils";
 import { copyText } from "@/utils/copy";
 
-import { ChanhDaiMark, getMarkSVG } from "./piyush-mark";
+import { PiyushMark, getPiyushMarkSVG } from "./piyush-mark";
 import { getWordmarkSVG } from "./piyush-wordmark";
 import { Icons } from "./icons";
 import { Button } from "./ui/button";
@@ -55,7 +55,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Portfolio",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: PiyushMark,
   },
   {
     title: "Blog",

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-// ✅ Main Piyush Logo Mark Component
+// ✅ Main PiyushMark Logo Mark Component
 export function PiyushMark(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
