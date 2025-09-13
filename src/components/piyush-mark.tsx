@@ -1,7 +1,8 @@
 import * as React from "react";
+import type { SVGProps } from "react";
 
 // Main PiyushMark Logo Mark Component
-export function PiyushMark(props: React.SVGProps<SVGSVGElement>) {
+export function PiyushMark(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
