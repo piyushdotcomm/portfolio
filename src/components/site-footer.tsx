@@ -53,7 +53,7 @@ export function SiteFooter() {
 
             <Separator />
 
-            <a
+            {/* <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
               href={`${SITE_INFO.url}/rss`}
               target="_blank"
@@ -61,7 +61,7 @@ export function SiteFooter() {
             >
               <RssIcon className="size-4" />
               <span className="sr-only">RSS</span>
-            </a>
+            </a> */}
 
             <Separator />
 
