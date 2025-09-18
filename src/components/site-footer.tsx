@@ -42,26 +42,26 @@ export function SiteFooter() {
           )}
         >
           <div className="mx-auto flex items-center justify-center gap-3 border-x border-edge bg-background px-4">
-            {/* <a
+            { <a
               className="flex font-mono text-xs font-medium text-muted-foreground"
-              href={`${SITE_INFO.url}/llms.txt`}
+              // href={`${SITE_INFO.url}/llms.txt`}
               target="_blank"
               rel="noopener noreferrer"
             >
               llms.txt
-            </a> */}
+            </a> }
 
             <Separator />
 
-            {/* <a
+            { <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href={`${SITE_INFO.url}/rss`}
+              // href={`${SITE_INFO.url}/rss`}
               target="_blank"
               rel="noopener noreferrer"
             >
               <RssIcon className="size-4" />
               <span className="sr-only">RSS</span>
-            </a> */}
+            </a> }
 
             <Separator />
 
