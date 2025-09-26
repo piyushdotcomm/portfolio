@@ -33,10 +33,9 @@ I am passionate about building innovative solutions that merge hardware, softwar
 Currently, I am learning **Data Structures & Algorithms (DSA), MERN stack development, and embedded systems programming** while experimenting with projects that combine IoT, AI, and automation.  
 
 Some of my key projects include:  
-- 🖼️ **AI Image Generator** — MERN + Python powered project for creative AI image generation.  
-- 🔐 **Electronic Password Lock** — Secure access system using 8051 microcontroller.  
-- ✅ **To-Do List Application** — Full-stack app with authentication and task management.  
-- 🌐 **Portfolio Website** — Personal website showcasing my skills, projects, and journey.  
+-  **AI Image Generator** — MERN + Python powered project for creative AI image generation.  
+-  **To-Do List Application** — Full-stack app with authentication and task management.  
+-  **Portfolio Website** — Personal website showcasing my skills, projects, and journey.  
 
 Let’s connect and build something amazing together! 🚀
   `,
