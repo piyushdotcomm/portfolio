@@ -4,7 +4,7 @@ import Image from "next/image";
 import type { SocialLink } from "@/features/profile/types/social-links";
 import { cn } from "@/lib/utils";
 
-export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
+export function SocialLinkItem({ icon: Icon, title, description, href }: SocialLink) {
   return (
     <a
       className={cn(
@@ -29,15 +29,21 @@ export function SocialLinkItem({ icon, title, description, href }: SocialLink) {
         <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/8 ring-inset dark:ring-white/8" />
       </div> */}
 
-      <Image
-        className="shrink-0"
-        src={icon}
-        alt={title}
-        width={48}
-        height={48}
-        quality={100}
-        unoptimized
-      />
+      {typeof Icon === "string" ? (
+        <Image
+          className="shrink-0"
+          src={Icon}
+          alt={title}
+          width={48}
+          height={48}
+          quality={100}
+          unoptimized
+        />
+      ) : (
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-muted/40">
+          <Icon className="size-6" />
+        </div>
+      )}
 
       <div className="flex-1">
         <h3 className="flex items-center font-medium underline-offset-4 group-hover/link:underline">

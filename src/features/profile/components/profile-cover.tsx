@@ -1,4 +1,4 @@
-import { AppleHelloEnglishEffect } from "@/components/ncdai/apple-hello-effect";
+import { AppleHelloEnglishEffect } from "@/components/apple-hello-effect";
 import { BrandContextMenu } from "@/components/brand-context-menu";
 import { cn } from "@/lib/utils";
 

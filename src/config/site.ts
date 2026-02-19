@@ -21,11 +21,11 @@ export const MAIN_NAV: NavItem[] = [
 
 ];
 
-export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com";
+export const SOURCE_CODE_GITHUB_REPO = "piyushdotcomm/portfolio";
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/piyushdotcomm";
 
 export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
+  utm_source: "piyush.in",
   utm_medium: "portfolio_website",
   utm_campaign: "referral",
 };

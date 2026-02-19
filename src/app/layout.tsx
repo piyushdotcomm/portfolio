@@ -80,7 +80,7 @@ export const metadata: Metadata = {
       },
     ],
     apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
+      url: "/favicon.png",
       type: "image/png",
       sizes: "180x180",
     },
