@@ -4,6 +4,7 @@ import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 import { About } from "@/features/profile/components/about";
 // import { Blog } from "@/features/profile/components/blog";
 import { Certifications } from "@/features/profile/components/certifications";
+import { Contact } from "@/features/profile/components/contact";
 import { Experiences } from "@/features/profile/components/experiences";
 import { GitHubContributions } from "@/features/profile/components/github-contributions";
 import { Overview } from "@/features/profile/components/overview";
@@ -55,6 +56,9 @@ export default function Page() {
         <Separator />
 
         <Certifications />
+        <Separator />
+
+        <Contact />
         <Separator />
       </div>
     </>

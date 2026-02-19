@@ -9,14 +9,14 @@ export const USER: User = {
   pronouns: "he/him",
   bio: "Computer Science student | AI & Robotics Enthusiast | Exploring DSA & Projects",
   flipSentences: [
-  "Building with AI and Robotics",
-  "Computer Science Student at VIT Chennai",
-  "Aspiring Innovator",
+    "Building with AI and Robotics",
+    "Computer Science Student at VIT Chennai",
+    "Aspiring Innovator",
   ],
   address: "Chennai, Tamil Nadu, India",
   phoneNumber: "NzA3OTY1MDk3NQ==", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "MTM3MjVzaHBpeXVzaEBnbWFpbC5jb20=", // base64 encoded
-  website: "piyush.com",
+  website: "https://piyushvatsal.vercel.app",
   jobTitle: "CSE Undergrad",
   jobs: [
     {
@@ -24,20 +24,14 @@ export const USER: User = {
       company: "VIT Chennai",
       website: "https://chennai.vit.ac.in/",
     },
-    
+
   ],
   about: `
-Hello, World! I am Piyush Kumar — a Computer Science student at VIT Chennai (Batch 2028) specializing in Artificial Intelligence and Robotics.  
-I am passionate about building innovative solutions that merge hardware, software, and intelligence to solve real-world problems.  
+I'm **Piyush Kumar**, a Computer Science undergraduate at **VIT Chennai** specializing in **Artificial Intelligence & Robotics**.
 
-Currently, I am learning **Data Structures & Algorithms (DSA), MERN stack development, and embedded systems programming** while experimenting with projects that combine IoT, AI, and automation.  
+I build high-performance web applications and developer tools. My recent work includes **[Editron](https://editron.in)**, a browser-based AI code editor, and **[Orbit CLI](https://orbit-cli.vercel.app)**, an AI-powered terminal assistant. I also led the team that built **SkillRoute 2.0**, a career guidance platform.
 
-Some of my key projects include:  
--  **AI Image Generator** — MERN + Python powered project for creative AI image generation.  
--  **To-Do List Application** — Full-stack app with authentication and task management.  
--  **Portfolio Website** — Personal website showcasing my skills, projects, and journey.  
-
-Let’s connect and build something amazing together! 🚀
+Currently, I'm focused on **Next.js 15**, **AI integration**, and **system design**, while also mastering Data Structures & Algorithms. I love open source and building things that help other developers.
   `,
   avatar: "/images/piyush.jpg",
   namePronunciationUrl: "/audio/piyush.mp3",
