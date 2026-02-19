@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 import { SimpleTooltip } from "@/components/ui/tooltip";
@@ -23,6 +22,10 @@ export function TeckStack() {
       >
         <ul className="flex flex-wrap gap-4 select-none">
           {TECH_STACK.map((tech) => {
+            const iconSlug = tech.icon ?? tech.key;
+            const lightColor = tech.color ?? "000000";
+            const darkColor = tech.darkColor ?? lightColor;
+
             return (
               <li key={tech.key} className="flex">
                 <SimpleTooltip content={tech.title}>
@@ -32,34 +35,26 @@ export function TeckStack() {
                     rel="noopener noreferrer"
                     aria-label={tech.title}
                   >
-                    {tech.theme ? (
-                      <>
-                        <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-light.svg`}
-                          alt={`${tech.title} light icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.light_&]:block"
-                          unoptimized
-                        />
-                        <Image
-                          src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}-dark.svg`}
-                          alt={`${tech.title} dark icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.dark_&]:block"
-                          unoptimized
-                        />
-                      </>
-                    ) : (
-                      <Image
-                        src={`https://assets.chanhdai.com/images/tech-stack-icons/${tech.key}.svg`}
-                        alt={`${tech.title} icon`}
-                        width={32}
-                        height={32}
-                        unoptimized
-                      />
-                    )}
+                    {/* Light mode icon */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://cdn.simpleicons.org/${iconSlug}/${lightColor}`}
+                      alt={`${tech.title} icon`}
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      className="block size-8 dark:hidden"
+                    />
+                    {/* Dark mode icon */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={`https://cdn.simpleicons.org/${iconSlug}/${darkColor}`}
+                      alt={`${tech.title} icon`}
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      className="hidden size-8 dark:block"
+                    />
                     <span className="sr-only">{tech.title}</span>
                   </a>
                 </SimpleTooltip>

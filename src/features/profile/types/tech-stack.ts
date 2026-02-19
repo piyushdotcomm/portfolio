@@ -1,14 +1,12 @@
 /**
  * A technology item displayed in the Tech Stack section.
  *
- * Icon file resolution:
- * - Default: /public/tech-stack-icons/[key].svg
- * - Themed (when `theme === true`):
- *   - Dark:  /public/tech-stack-icons/[key]-dark.svg
- *   - Light: /public/tech-stack-icons/[key]-light.svg
+ * Icon resolution uses cdn.simpleicons.org:
+ * - URL: https://cdn.simpleicons.org/{icon}/{color}
+ * - `icon` defaults to lowercase `key` if not specified
  */
 export type TechStack = {
-  /** Unique identifier used to resolve icon files. */
+  /** Unique identifier. */
   key: string;
   /** Display name of the technology. */
   title: string;
@@ -16,6 +14,10 @@ export type TechStack = {
   href: string;
   /** Category tags used for grouping/filtering. */
   categories: string[];
-  /** If true, use theme-specific icons for dark/light mode. */
-  theme?: boolean;
+  /** Simple Icons slug (defaults to lowercase key). */
+  icon?: string;
+  /** Brand hex color (without #). */
+  color?: string;
+  /** Hex color for dark mode (without #), if needed for visibility. */
+  darkColor?: string;
 };
