@@ -1,51 +1,67 @@
-# [piyush.in](https://piyush.in)
+# Piyush.in - Modern Developer Portfolio
 
-A modern portfolio, component showcase, and blog to present my work as a Developer & Designer.
+A modern, high-performance portfolio website built with **Next.js 15**, **Tailwind CSS v4**, and **Shadcn UI**. Designed to showcase my projects, blog posts, and technical skills in AI, Robotics, and Full-Stack Development.
 
-Check out the live site: [piyush.in](https://piyush.in)
+## 🚀 Live Demo
 
+Check out the live site: [**piyush.in**](https://piyush.in)
 
-## Overview
+## ✨ Features
 
-### Tech Stack
+- **Personal Branding:** Custom logo and refined aesthetic.
+- **Blog Platform:** MDX-powered blog with syntax highlighting and RSS support.
+- **Component Showcase:** Interactive UI components with copy-paste code snippets.
+- **Responsive Design:** Fully responsive layout with mobile-first approach.
+- **Dark Mode:** Seamless light and dark mode switching.
+- **SEO Optimized:** Built-in SEO best practices, sitemap, and metadata.
 
-- Next.js 15
-- Tailwind CSS v4
-- shadcn/ui
-- Motion
+## 🛠️ Tech Stack
 
-### Features
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components:** [Shadcn UI](https://ui.shadcn.com/)
+- **Animations:** [Motion](https://motion.dev/) (formerly Framer Motion)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Content:** [MDX](https://mdxjs.com/) (next-mdx-remote)
 
-- Clean & minimal design
-- Light/Dark mode support
-- Responsive & fast
-- SEO optimization (JSON-LD, sitemap, robots.txt)
-- PWA (Installable Portfolio)
-- Spam-protected contact system
+## ⚡ Getting Started
 
-### Blog
+### Prerequisites
 
-- Supports Markdown & MDX
-- Easy access with `.mdx` in URLs
-- Syntax Highlighting for code
-- RSS Feed for subscribers
-- Auto-generated OG Images
+- Node.js 20+ (Recommended)
+- pnpm (Recommended) or npm
 
-### Components & Showcase
+### Installation
 
-A growing collection of components, hooks, and pages with:
+1.  **Clone the repository:**
 
-- **Live Demos**
-- **Copyable Code Snippets**
-- **Styled Code Blocks**
-- **Command Blocks** for installs (`npm`, `yarn`, `pnpm`, `bun`)
+    ```bash
+    git clone https://github.com/piyushdotcomm/portfolio.git
+    cd portfolio
+    ```
 
-## Development
+2.  **Install dependencies:**
 
-Clone the repo and start the dev server:
+    ```bash
+    pnpm install
+    # or
+    npm install
+    ```
 
-```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
-pnpm install
-pnpm dev
+3.  **Start the development server:**
+
+    ```bash
+    pnpm dev
+    # or
+    npm run dev
+    ```
+
+    Open [http://localhost:1408](http://localhost:1408) to view it in your browser.
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Built by [Piyush Kumar](https://github.com/piyushdotcomm).
