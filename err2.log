@@ -1,0 +1,25 @@
+
+> piyush-portfolio@0.1.0 registry:internal:build C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in
+> tsx --tsconfig ./tsconfig.scripts.json ./src/scripts/build-registry.mts
+
+
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+Error: Transform failed with 1 error:
+C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\src\registry\index.ts:1:5: ERROR: Expected ";" but found "IS"
+    at failureErrorWithLog (C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\node_modules\.pnpm\esbuild@0.25.1\node_modules\esbuild\lib\main.js:1477:15)
+    at C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\node_modules\.pnpm\esbuild@0.25.1\node_modules\esbuild\lib\main.js:756:50
+    at responseCallbacks.<computed> (C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\node_modules\.pnpm\esbuild@0.25.1\node_modules\esbuild\lib\main.js:623:9)
+    at handleIncomingPacket (C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\node_modules\.pnpm\esbuild@0.25.1\node_modules\esbuild\lib\main.js:678:12)
+    at Socket.readFromStdout (C:\Users\DELL\OneDrive\Desktop\Portfoilio 2.0\piyush.in\node_modules\.pnpm\esbuild@0.25.1\node_modules\esbuild\lib\main.js:601:7)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+  name: 'TransformError'
+}
+
+Node.js v22.19.0
+ ELIFECYCLE  Command failed with exit code 1.

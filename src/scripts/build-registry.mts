@@ -4,8 +4,6 @@ import path from "node:path";
 import { rimraf } from "rimraf";
 import { type Registry, registrySchema } from "shadcn/schema";
 
-import { registryConfig } from "../config/registry";
-import { registry } from "../registry";
 
 const REGISTRY_PATH = path.join(process.cwd(), "src/__registry__");
 const PUBLIC_REGISTRY_PATH = path.join(process.cwd(), "public/r");
@@ -59,7 +57,7 @@ export const Index: Record<string, any> = {`;
     {
       $schema: "https://ui.shadcn.com/schema/registry.json",
       name: "ncdai",
-      homepage: "https://chanhdai.com/components",
+      homepage: "https://piyush.in/components",
       items: registry.items
         .filter((item) => item.type !== "registry:example")
         .map((item) => {
@@ -83,6 +81,8 @@ export const Index: Record<string, any> = {`;
     2
   );
 
+  const registryConfigModule = await import("../config/registry.ts");
+  const registryConfig = registryConfigModule.registryConfig || (registryConfigModule as any).default?.registryConfig;
   const registryBaseUrl = registryConfig.baseUrl;
   const registryBaseUrlRegex = /<registryBaseUrl>/g;
   registryJSON = registryJSON.replace(registryBaseUrlRegex, registryBaseUrl);
@@ -109,8 +109,10 @@ export const Index: Record<string, any> = {`;
 
 try {
   console.log("💽 Building registry...");
-
-  const result = registrySchema.safeParse(registry);
+  const registryModule = await import("../registry/index.ts");
+  const myRegistry = registryModule.myRegistry || (registryModule as any).default?.myRegistry;
+  
+  const result = registrySchema.safeParse(myRegistry);
 
   if (!result.success) {
     console.error(result.error);
